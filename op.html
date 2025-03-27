@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RTI Filing Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>RTI Filing Assistant</h1>
+
+    <div class="form">
+        <textarea id="query" rows="5" placeholder="Enter your query or concern in simple words"></textarea><br>
+
+        <select id="department">
+            <option value="">Select Department</option>
+            <option value="Education Department">Education Department</option>
+            <option value="Public Works Department">Public Works Department</option>
+            <option value="Health Department">Health Department</option>
+        </select><br>
+
+        <button onclick="generateRTI()">Generate RTI</button>
+    </div>
+
+    <h2>Generated RTI Letter:</h2>
+    <div id="output" class="output"></div>
+    <button onclick="downloadRTI()">Download RTI Letter</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
